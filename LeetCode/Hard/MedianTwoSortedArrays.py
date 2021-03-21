@@ -13,3 +13,8 @@ nums1 = [1,3]
 nums2 = [2,4]
 res = findMedianSortedArrays(nums1, nums2)
 print(res)
+
+s = -12345
+a = str(abs(s))
+b = a[::-1]
+print(type(int(b)))
