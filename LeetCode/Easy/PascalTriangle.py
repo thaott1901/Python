@@ -11,3 +11,16 @@ class Solution:
                     row.append(node)
             pascal.append(row)
         return pascal
+
+    def getRow(self, rowIndex: int) -> List[int]:
+        pascal = []
+        for i in range(rowIndex + 1):
+            row = []
+            for j in range(i + 1):
+                if j < 1 or j == i:
+                    row.append(1)
+                else:
+                    node = pascal[i - 1][j - 1] + pascal[i - 1][j]
+                    row.append(node)
+            pascal.append(row)
+        return pascal[rowIndex]
