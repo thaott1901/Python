@@ -1,17 +1,18 @@
+# memo = {}
 
-memo = {}
-
-def fib(n):
+def fib(n, memo: dict):
     if n in memo:
         return memo[n]
     res = 1
     if n <= 2:
         return res
     else:
-        res = fib(n -1) + fib(n -2)
+        res = fib(n - 1, memo) + fib(n - 2, memo)
         memo[n] = res
     return res
 
-x = fib(10)
+
+d = {}
+x = fib(10, d)
 print(x)
-print(memo)
+print(d)
