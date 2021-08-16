@@ -20,3 +20,6 @@ def longestPalindrome(s):
 s = "ababad"
 res = longestPalindrome(s)
 print(res)
+arr = []
+arr.append([s[0], s[2]])
+print(arr)
