@@ -16,6 +16,6 @@ class Container:
 container = Container()
 
 # Now call maxArea on the instance
-arr = [5, 1, 3, 4]
+arr = [1,8,6,2,5,4,8,3,7]
 res = container.maxArea(arr)
 print(res)
